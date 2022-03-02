@@ -1,70 +1,119 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<h1 align="center">
+     Nome do Site
+</h1>
 
-In the project directory, you can run:
+<h4 align="left">
+    Slogan do Projeto. Fazer um texto curto sobre o que é o projeto.
+</h4>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##  🕵Sobre
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Escrever de forma sucinta sobre o que é o seu projeto. Por exemplo, se você está fazendo uma Pokedéx pode escrever : Aplicação com intuito de criar uma pokedéx, site onde você pode ver os detalhes dos pokemóns e montar a sua equipe.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  👩🏾Quem Faz 
 
-### `npm run build`
+- ~~COLOCAR O NOME DAS PESSOAS AUTORAS DO PROJETO~~
+- PESSOA 1
+- PESSOA 2
+- PESSOA 3
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
+##  🔠Conteúdos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!--ts-->
+   * [Sobre](#sobre)
+   * [Quem Faz](#-quem-faz)
+   * [Status](#status)
+   * [Objetivo do Projeto](#objetivo-do-projeto)
+   * [Requisitos de Funcionalidade](#requisitos-de-funcionalidade)
+   * [Concepção do Projeto](#concepcao-do-projeto)
+   * [Link para Acessar](#link-para-acessar)
+   * [Rodando o Projeto](#rodando-o-projeto)
+   * [Sobre a Licença](#sobre-a-licença)
+<!--te-->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+---
+##  🧭Status do Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+~~COLOCAR AQUI O STATUS DO PROJETO. ALÉM DISSO, VOCÊ PODE COLOCAR QUAL PARTE VOCÊ ESTÁ DESENVOLVENDO (ESTILIZAÇÃO, RESPONSIVIDADE, ETC...)~~
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ - ⏳ Fazendo
+ - 📥 Testando 
+ - ⌛ Feito
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##  🎯Objetivo do Projeto
 
-## Learn More
+Este é um projeto de Back-end | Front-end | Full-Stack , desenvolvido no bootcamp da Labenu, cujo o principal objetivo é estudar e compreender : ~~COLOCAR AQUI QUAIS SÃO OS CONCEITOS  E TECNOLOGIAS QUE VOCÊ ESTAVA FOCADO EM ESTUDAR, AO REALIZAR ESSE PROJETO~~. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+~~EXEMPLO:~~
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Este é um projeto de Back-end , desenvolvido no bootcamp da Labenu, cujo o principal objetivo é estudar e compreender :  Diferença entre banco de dados relacionais e não relacionais ; MySQL ; Criação de Query.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## ☑️Requisitos de Funcionalidade
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [x] Funcionalidade 1
+- [ ] Funcionalidade 2
+- [ ] Funcionalidade 3
+- [ ] Funcionalidade 4
 
-### Making a Progressive Web App
+Além das funcionalidades, aqui você pode por Prints e gifs do seu projeto, como ele funciona.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 💡Concepção do Projeto
 
-### Deployment
+- **Wireframe do Projeto:** ~~COLOCAR AQUI O WIREFRAME "ESBOÇO" DO PROJETO~~
+- **Link do Figma:** ~~COLOCAR AQUI O LINK DO FIGMA | LINK DO ADOBE XD | LINK DO WIREFRAME (FRONT-END)~~
+- **Modelagem do Banco de Dados :** ~~COLOCAR AQUI OS DIAGRAMAS DE MODELAGEM DO BANCO DE DADOS E EXPLICAR UM POUCO SOBRE~~ . 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+EXEMPLO: 
 
-### `npm run build` fails to minify
+Para esse projeto são modelados três entidades : **Estudante (STUDENT), Professor (TEACHER)** e **Turma(CLASS)**.  Cada um com as seguintes caracteristicas :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+→ Estudante -  id, nome, email, data de nascimento e os principais hobbies;
+
+→ Professor - id, nome, email, data de nascimento e todas as especialidades ;
+
+→ Classe - id, nome, data de início, data de término, lista de professores responsáveis, uma lista de alunos e módulo atual em que a turma está.
+
+![Untitled](https://user-images.githubusercontent.com/52434685/120907206-16eb8700-c636-11eb-936f-d5212a4c5a36.png)
+
+
+---
+
+## 🔗Link para Acessar
+
+- **Link do Surge:** ~~COLOCAR AQUI O LINK DO SURGE~~
+
+---
+
+
+
+## 🛰Rodando o Projeto
+
+~~EXPLICAR AQUI O PASSO A PASSO PARA CONSEGUIR RODAR E ACESSAR O PROJETO.~~
+
+Para Rodar o projeto, siga as seguintes etapas :
+
+- COLOCAR A ETAPA 1
+- COLOCAR A ETAPA 2
+- COLOCAR A ETAPA 3
+
+
+---
+
+## 📝Sobre a Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
