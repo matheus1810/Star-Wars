@@ -8,7 +8,7 @@ column-gap:40px;
 padding-top:20px ;
 text-align:center;
 justify-content: center;
-height:85vh;
+height:86.5vh;
 background-image:url(${backgroundUrl});
 color:white;
 li{

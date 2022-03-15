@@ -9,7 +9,7 @@ column-gap:30px;
 padding-top:15px;
 text-align:center;
 justify-content: center;
-height:86vh;
+height:546.3px;
 background-image:url(${backgroundUrl});
 color:white;
 li{

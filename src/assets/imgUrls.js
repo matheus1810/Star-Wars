@@ -96,14 +96,14 @@ export const vehiclesUrls = {
 }
 
 export const speciesUrls = {
-    1: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIF.X3o0OtBQVuUpXNcrh4IPjw%26pid%3DApi&f=1",
+    1: "https://upload.wikimedia.org/wikipedia/en/9/9b/Luke_Skywalker.png",
     2: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.euVhpkYNJ-Ngl36X-UganQHaHa%26pid%3DApi&f=1",
     3: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.PB4V_w696ogcEUxbtD6ImAHaEK%26pid%3DApi&f=1",
     4: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.8v-f5yoOJABq01Cck3-aOAHaJ4%26pid%3DApi&f=1",
     5: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.RzyWeVYsXi39AA30oZm4OQHaDt%26pid%3DApi&f=1",
     6: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.KiibvDkaxnYQmUIsyjhGwQHaDt%26pid%3DApi&f=1",
     7: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-KvuvVHFNT-ckpa3uziV4wHaDt%26pid%3DApi&f=1",
-    8: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.EsCjiSsHZn3JWpSujwjQjwHaE-%26pid%3DApi&f=1",
+    8: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJuGoxFgG-JFwFDiodJEWqzxsukSJxJEoLfg&usqp=CAU",
     9: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.eOASUZ5J4mqRizYIMoqftwHaDt%26pid%3DApi&f=1",
     10: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.bxThjNxg800KUwOmZtQwWwHaDt%26pid%3DApi&f=1",
 }

@@ -2,8 +2,9 @@ import styled from "styled-components"
 
 export const HomePageContainer=styled.div.attrs((props) => props)`
 background-image: url('https://hddesktopwallpapers.in/wp-content/uploads/2015/06/pictures-star-wars-soldiers.jpg');
-background-size: cover;
-height:500px;
+background-size: 100%;
+background-repeat:no-repeat;
+height:560.3px;
 border-top:1px solid black;
 display:flex;
 

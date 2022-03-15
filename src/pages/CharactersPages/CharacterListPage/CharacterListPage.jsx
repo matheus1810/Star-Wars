@@ -11,8 +11,7 @@ export const CharacterListPage = () => {
 
     const navigate = useNavigate()
 
-    console.log(data.results)
-    console.log('urls', urls[0])
+  
 
     return (
         <CharacterListPageContainer>

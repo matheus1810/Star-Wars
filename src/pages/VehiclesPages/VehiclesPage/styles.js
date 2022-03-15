@@ -10,7 +10,7 @@ column-gap:50px;
 padding-top:10px;
 text-align:center;
 justify-content: center;
-height:87vh;
+height:87.99vh;
 background-image:url(${backgroundUrl});
 color:white;
 li{

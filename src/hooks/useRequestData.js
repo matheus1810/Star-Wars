@@ -24,7 +24,7 @@ export const useRequestDataDetails=(url,initialState)=>{
 
     useEffect(() => {
         axios
-            .get(url)//retorna a primeira request e dessa request tenho q pegar as url
+            .get(url)//retorna a primeira request e dessa request tenho q pegar as urls
             .then((res)=>{
                 setData(res.data)
                 axios
@@ -39,4 +39,21 @@ export const useRequestDataDetails=(url,initialState)=>{
 
     return {data , home}
     
+}
+
+export const getData = async (url) => {
+    let error;
+    let response;
+    
+    try {
+         const { data } = await axios.get(url);
+        response = data; 
+    } catch(e) {
+        error = e;
+    }
+    
+    return {
+        error,
+        response
+    }
 }

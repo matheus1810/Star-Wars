@@ -12,8 +12,6 @@ export const SpeciesDetailsPage = () => {
 
     const data = useRequestDataDetails(`${BASE_URL}/species/${id}`,[]) 
 
-    console.log(" data", data)
-
     const {
         name,
         language,

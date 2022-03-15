@@ -58,8 +58,8 @@ width:100%;
 height:76.7vh;
 display: grid;
 text-align:center;
-grid-template-columns:1fr 1fr 1fr  ;
-grid-template-rows:110px ;
+grid-template-columns:repeat(3,220px);
+grid-template-rows:130px ;
 column-gap:70px;
 padding:20px;
 h2{

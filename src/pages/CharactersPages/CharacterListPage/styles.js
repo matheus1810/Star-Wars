@@ -11,7 +11,7 @@ column-gap:1rem;
 justify-content: center;
 background-image:url(${backgroundUrl});
 color:white;
-height:88vh;
+height:88.99vh;
 img{
     cursor:pointer;
     width:100%;
