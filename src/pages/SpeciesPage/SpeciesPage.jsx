@@ -1,8 +1,8 @@
 import { ImgContainer, SpeciesPageContainer } from "./styles";
-import { speciesUrls } from "../../../assets/imgUrls";
-import { BASE_URL } from "../../../constants/urls";
-import {useRequestData } from "../../../hooks/useRequestData";
-import { Modal } from "../../../modal/Modal";
+import { speciesUrls } from "../../assets/imgUrls";
+import { BASE_URL } from "../../constants/urls";
+import {useRequestData } from "../../hooks/useRequestData";
+import { Modal } from "../../modal/Modal";
 import { useState } from "react";
 
 export const SpeciesPage = () => {
