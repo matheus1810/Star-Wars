@@ -4,6 +4,8 @@ import { BASE_URL } from "../../constants/urls";
 import {useRequestData } from "../../hooks/useRequestData";
 import { Modal } from "../../modal/Modal";
 import { useState } from "react";
+import { PageContainerStyled } from "../../globalStyles/PageContainerStyled";
+import { CardStyled } from "../../globalStyles/CardStyled";
 
 export const SpeciesPage = () => {
   const data = useRequestData(`${BASE_URL}/species`, []);
@@ -13,7 +15,7 @@ export const SpeciesPage = () => {
   const [img, setImg] = useState(Number);
 
   return (
-    <SpeciesPageContainer>
+    <PageContainerStyled>
       {data?.results?.map((item, index) => {
   const {
     name,
@@ -29,7 +31,7 @@ export const SpeciesPage = () => {
   
         return (
           <div key={index}>
-            <ImgContainer>
+            <CardStyled>
               <img
                 id={index + 1}
                 onClick={() => {
@@ -38,8 +40,9 @@ export const SpeciesPage = () => {
                 }}
                 src={speciesUrls[index + 1]}
               />
-            </ImgContainer>
-            <li>{item.name}</li>
+          
+            <div>{item.name}</div>
+            </CardStyled>
             {modalIsVisible && (
               <Modal setmodalIsVisible={setmodalIsVisible}>
                 <ImgContainer>
@@ -63,6 +66,6 @@ export const SpeciesPage = () => {
           </div>
         );
       })}
-    </SpeciesPageContainer>
+    </PageContainerStyled>
   );
 };
