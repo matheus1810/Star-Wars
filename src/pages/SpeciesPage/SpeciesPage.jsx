@@ -6,6 +6,7 @@ import { Modal } from "../../modal/Modal";
 import { useState } from "react";
 import { PageContainerStyled } from "../../globalStyles/PageContainerStyled";
 import { CardStyled } from "../../globalStyles/CardStyled";
+import LoaderPage from "../../components/LoaderPage/LoaderPage";
 
 export const SpeciesPage = () => {
   const data = useRequestData(`${BASE_URL}/species`, []);
@@ -16,6 +17,7 @@ export const SpeciesPage = () => {
 
   return (
     <PageContainerStyled>
+      {Object.keys(data).length<=0  && (<LoaderPage/>)}
       {data?.results?.map((item, index) => {
   const {
     name,

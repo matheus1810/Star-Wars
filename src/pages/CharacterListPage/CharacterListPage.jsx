@@ -7,16 +7,24 @@ import { PageContainerStyled } from "../../globalStyles/PageContainerStyled";
 import { charactersUrls } from "../../assets/imgUrls";
 import { useState } from "react";
 import { Modal } from "../../modal/Modal";
+import LoaderPage from "../../components/LoaderPage/LoaderPage";
+
 
 export const CharacterListPage = () => {
-  const data = useRequestData(`${BASE_URL}/people`, []);
+  const data = useRequestData(`${BASE_URL}/people`, {});
+
+console.log(Object.keys(data).length<=0)
+  
 
   const [modalIsVisible, setmodalIsVisible] = useState(false);
   const [img, setImg] = useState(Number);
 
   return (
     <div>
+       
       <PageContainerStyled>
+      {Object.keys(data).length<=0  && (<LoaderPage/>)}
+
         {data?.results &&
           data.results.map((character, index) => {
             const {
@@ -30,7 +38,9 @@ export const CharacterListPage = () => {
             } = data && data.results && data.results[img];
 
             return (
-              <div>
+              
+              <div key={index}>
+                
                 <CardStyled
                   onClick={() => {
                     setmodalIsVisible(true)

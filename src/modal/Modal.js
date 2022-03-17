@@ -25,7 +25,7 @@ export const Modal = ({ children, setmodalIsVisible }) => {
                     <div
                         id="spam-buttom"
                         onClick={closeModal}
-
+                        
                     >X</div>
                 </ModalHeader>
 

@@ -5,7 +5,7 @@ width:100%;
 img{
     width:200px;
     height:200px;
-    cursor:pointer;
+
 
 }
 `

@@ -14,6 +14,11 @@ align-items:center;
 export const ModalHeader = styled.div`
 text-align:end;
 margin:10px 10px 0 0;
+div{
+    :hover{
+        cursor:pointer;
+    }
+}
 `
 export const ModalContent = styled.div`
 

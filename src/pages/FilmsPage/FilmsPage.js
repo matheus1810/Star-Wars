@@ -5,6 +5,8 @@ import { BASE_URL } from "../../constants/urls"
 import { useState } from "react"
 import { Modal } from "../../modal/Modal"
 import { CardStyled } from "../../globalStyles/CardStyled"
+import LinearColor from "../../components/LoaderPage/LoaderPage"
+import LoaderPage from "../../components/LoaderPage/LoaderPage"
 
 export const FilmsPage = () => {
 
@@ -13,10 +15,13 @@ export const FilmsPage = () => {
     const [modalIsVisible, setmodalIsVisible] = useState(false);
     const [img, setImg] = useState(Number);
 
+
     return (
         <FilmsPageContainer>
+            {Object.keys(data).length<=0  && (<LoaderPage/>)}
 
-            {data && data.results && data.results.map((item, index) => {
+             {data && data.results && data.results.map((item, index) => {
+
 
                 const {
                     director,
@@ -25,7 +30,7 @@ export const FilmsPage = () => {
                 } = data && data.results && data.results[img]
 
                 return (
-                    <div>
+                    <div key={index}>
                         <ImgContainer>
                             <img
                                 onClick={() => {
@@ -54,8 +59,7 @@ export const FilmsPage = () => {
             }
             )
 
-            }
-
+            } 
         </FilmsPageContainer>
     )
 }

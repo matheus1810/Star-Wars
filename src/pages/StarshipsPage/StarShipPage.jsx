@@ -7,6 +7,7 @@ import { useState } from "react"
 import { Modal } from "../../modal/Modal"
 import { PageContainerStyled } from "../../globalStyles/PageContainerStyled"
 import { CardStyled } from "../../globalStyles/CardStyled"
+import LoaderPage from "../../components/LoaderPage/LoaderPage"
 
 export const StarShipPage = () => {
 
@@ -18,6 +19,7 @@ export const StarShipPage = () => {
 
   return (
     <PageContainerStyled>
+      {Object.keys(data).length<=0  && (<LoaderPage/>)}
       {data && data.results && data.results.map((item, index) => {
         const {
           name,

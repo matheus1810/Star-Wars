@@ -7,6 +7,7 @@ import { useState } from "react";
 import { Modal } from "../../modal/Modal";
 import { PageContainerStyled } from "../../globalStyles/PageContainerStyled";
 import { CardStyled } from "../../globalStyles/CardStyled";
+import LoaderPage from "../../components/LoaderPage/LoaderPage";
 
 export const VehiclesPage = () => {
   const data = useRequestData(`${BASE_URL}/vehicles`, []);
@@ -15,6 +16,7 @@ export const VehiclesPage = () => {
 
   return (
     <PageContainerStyled>
+      {Object.keys(data).length<=0  && (<LoaderPage/>)}
       {data.results &&
         data.results.map((item, index) => {
           const {

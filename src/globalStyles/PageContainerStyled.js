@@ -3,7 +3,6 @@ import { backgroundUrl } from "../constants/back-ground-url"
 
 
 export const PageContainerStyled = styled.div`
-position:relative;
 display:grid;
 grid-template-columns:repeat(5,230px);
 grid-template-rows:270px 270px;

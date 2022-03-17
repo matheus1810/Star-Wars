@@ -3,12 +3,10 @@ import { backgroundUrl } from "../../constants/back-ground-url"
 
 
 export const FilmsPageContainer = styled.div`
-
 height:556.73px;
 display:grid;
 grid-template-columns:repeat(6,200px);
 column-gap:20px;
-
 text-align:center;
 justify-content: center;
 background-image:url(${backgroundUrl});
