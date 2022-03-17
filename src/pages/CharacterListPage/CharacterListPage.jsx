@@ -1,11 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import { BASE_URL } from "../../../constants/urls";
-import { useRequestData } from "../../../hooks/useRequestData";
+import { BASE_URL } from "../../constants/urls";
+import { useRequestData } from "../../hooks/useRequestData";
 import { CardCharacterContainer, CharacterListPageContainer ,ImgContainer} from "./styles";
-import { charactersUrls } from "../../../assets/imgUrls";
+import { charactersUrls } from "../../assets/imgUrls";
 import { useState } from "react";
-import { Modal } from "../../../modal/Modal";
-import { speciesUrls } from "../../../assets/imgUrls";
+import { Modal } from "../../modal/Modal";
 
 export const CharacterListPage = () => {
   const data = useRequestData(`${BASE_URL}/people`, []);
@@ -42,7 +41,7 @@ export const CharacterListPage = () => {
                 {modalIsVisible && (
                   <Modal setmodalIsVisible={setmodalIsVisible}>
                     <ImgContainer>
-                      <img src={speciesUrls[img + 1]} />
+                      <img src={charactersUrls[img+1]} />
                     </ImgContainer>
                     <ul>
                       <h3>{name}</h3>
@@ -57,6 +56,7 @@ export const CharacterListPage = () => {
                 )}
               </CardCharacterContainer>
             );
+
           })}
       </CharacterListPageContainer>
     </div>

@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom"
-import { CharacterListPage } from "../pages/CharactersPages/CharacterListPage/CharacterListPage"
+import { CharacterListPage } from "../pages/CharacterListPage/CharacterListPage"
 import { HomePage } from "../pages/HomePage/HomePage"
 import { PlanetsPage } from "../pages/PlanetsPages/PlanetsPage/PanetsPage"
 import { PlanetsDetalsPage } from "../pages/PlanetsPages/PlanetsDetailsPage/PlanetsDetailsPage"

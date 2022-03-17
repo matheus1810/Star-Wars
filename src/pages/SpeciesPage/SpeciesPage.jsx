@@ -26,6 +26,7 @@ export const SpeciesPage = () => {
     eye_colors,
     people,
   } = data && data.results && data.results[img]
+  
         return (
           <div key={index}>
             <ImgContainer>
