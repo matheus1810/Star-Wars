@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom"
 import { useRequestData } from "../../hooks/useRequestData"
 import { useState } from "react"
 import { Modal } from "../../modal/Modal"
+import { PageContainerStyled } from "../../globalStyles/PageContainerStyled"
+import { CardStyled } from "../../globalStyles/CardStyled"
 
 export const StarShipPage = () => {
 
@@ -15,7 +17,7 @@ export const StarShipPage = () => {
   const [img, setImg] = useState(Number);
 
   return (
-    <StarShipsPageContainer>
+    <PageContainerStyled>
       {data && data.results && data.results.map((item, index) => {
         const {
           name,
@@ -35,17 +37,18 @@ export const StarShipPage = () => {
         return (
 
           <div key={index}>
-            <ImgContainer>
+            <CardStyled>
               <img
                 onClick={() => {
                   setmodalIsVisible(true);
                   setImg(index)
                 }}
                 src={starshipsUrls[index + 1]} />
-            </ImgContainer>
-            <li>
-              {item.name}
-            </li>
+
+              <div>
+                {item.name}
+              </div>
+            </CardStyled>
             {modalIsVisible && (
               <Modal setmodalIsVisible={setmodalIsVisible}>
                 <ImgContainer>
@@ -72,6 +75,6 @@ export const StarShipPage = () => {
           </div>)
       })}
 
-    </StarShipsPageContainer>
+    </PageContainerStyled>
   )
 }
