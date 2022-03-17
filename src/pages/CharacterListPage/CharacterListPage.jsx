@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { BASE_URL } from "../../constants/urls";
 import { useRequestData } from "../../hooks/useRequestData";
-import { CardCharacterContainer, CharacterListPageContainer ,ImgContainer} from "./styles";
+import { Card, CharacterListPageContainer, ImgContainer } from "./styles";
 import { charactersUrls } from "../../assets/imgUrls";
 import { useState } from "react";
 import { Modal } from "../../modal/Modal";
@@ -28,20 +28,23 @@ export const CharacterListPage = () => {
             } = data && data.results && data.results[img];
 
             return (
-              <CardCharacterContainer key={index}>
-                <img
+              <div>
+                <Card
                   onClick={() => {
-                    setmodalIsVisible(true);
-                    setImg(index);
-                  }}
-                  src={charactersUrls[index + 1]}
-                ></img>
-                {character.name}
+                    setmodalIsVisible(true)
+                    setImg(index)
+                  }}>
+
+                  <img src={charactersUrls[index + 1]}></img>
+
+                  <div>{character.name}</div>
+                  
+                </Card>
 
                 {modalIsVisible && (
                   <Modal setmodalIsVisible={setmodalIsVisible}>
                     <ImgContainer>
-                      <img src={charactersUrls[img+1]} />
+                      <img src={charactersUrls[img + 1]} />
                     </ImgContainer>
                     <ul>
                       <h3>{name}</h3>
@@ -54,9 +57,8 @@ export const CharacterListPage = () => {
                     </ul>
                   </Modal>
                 )}
-              </CardCharacterContainer>
+              </div>
             );
-
           })}
       </CharacterListPageContainer>
     </div>

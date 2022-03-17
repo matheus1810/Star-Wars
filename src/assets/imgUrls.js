@@ -1,49 +1,3 @@
-export const urls = [
-    {
-        name: "Leia Organa",
-        url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%3Fid%3DOIP.svIq3JKx9u_4m2RCrvTc-QAAAA%26pid%3DApi&f=1"
-    },
-    {
-        name: "Obi-Wan Kenobi",
-        url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.MW4yfR_jJONzvx3G6LLRUgAAAA%26pid%3DApi&f=1"
-    },
-    {
-        name: 'Luke Skywalker',
-        url: "https://upload.wikimedia.org/wikipedia/en/9/9b/Luke_Skywalker.png"
-    },
-    {
-        name: "C-3PO",
-        url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Ib97qo9FYgVFa3155RDeRQHaI_%26pid%3DApi&f=1"
-    },
-    {
-        name: "R2-D2",
-        url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tSE0tzvHaQ39Aam9z-XI6QHaJ3%26pid%3DApi&f=1"
-    },
-    {
-        name: "Darth Vader",
-        url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.2TkYKwLjFDwSsPb83XkuWwHaJp%26pid%3DApi&f=1"
-    },
-   
-    {
-        name: "Owen Lars",
-        url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.ewvxIRwpBRhjNsHn1eHYywHaJv%26pid%3DApi&f=1"
-    },
-    {
-        name: "Beru Whitesun lars ",
-        url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.PYAna4Fn3brYCNjwOlatGwHaIN%26pid%3DApi&f=1"
-    },
-    {
-        name: "R5-D4",
-        url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.EhmZd98Z9HuqoZZfMCqkLAHaIu%26pid%3DApi&f=1"
-    },
-    {
-        name: "Biggs Darklighter",
-        url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.dTKMXyMZm3lmJ4TErXKgmwHaJ4%26pid%3DApi&f=1"
-    },
-]
-
-
-
 
 export const charactersUrls =
 {
@@ -64,7 +18,7 @@ export const filmsUrls = {
     2: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.9Tk3ZsPuhjFWpIXdG4ycxQHaLH%26pid%3DApi&f=1",
     3: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.TsW5IQDpW-blW2WRxcS6LQHaLH%26pid%3DApi&f=1",
     4: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.gYfelnE-PX_0kkRB8TIchgHaLH%26pid%3DApi&f=1",
-    5: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.poLAIFxNFRhwtiJe4WzTcAHaLH%26pid%3DApi&f=1",
+    5: "https://flxt.tmsimg.com/assets/p28914_p_v12_ah.jpg",
     6: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.0O_mZD5Jp65svA0v3HnjHwHaLH%26pid%3DApi&f=1"
 }
 
