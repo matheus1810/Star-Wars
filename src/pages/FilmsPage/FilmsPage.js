@@ -4,6 +4,7 @@ import { useRequestData} from "../../hooks/useRequestData"
 import { BASE_URL } from "../../constants/urls"
 import { useState } from "react"
 import { Modal } from "../../modal/Modal"
+import { CardStyled } from "../../globalStyles/CardStyled"
 
 export const FilmsPage = () => {
 
@@ -24,9 +25,7 @@ export const FilmsPage = () => {
                 } = data && data.results && data.results[img]
 
                 return (
-                    <div
-                        key={index}
-                    >
+                    <div>
                         <ImgContainer>
                             <img
                                 onClick={() => {
@@ -34,10 +33,9 @@ export const FilmsPage = () => {
                                     setImg(index)
                                 }}
                                 src={filmsUrls[index + 1]} />
+                      
+
                         </ImgContainer>
-                        <li>
-                            {item.title}
-                        </li>
 
                         {modalIsVisible && (
                             <Modal setmodalIsVisible={setmodalIsVisible}>

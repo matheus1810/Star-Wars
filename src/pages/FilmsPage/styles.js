@@ -3,13 +3,14 @@ import { backgroundUrl } from "../../constants/back-ground-url"
 
 
 export const FilmsPageContainer = styled.div`
+
+height:556.73px;
 display:grid;
-grid-template-columns:repeat(6,15vw);
+grid-template-columns:repeat(6,200px);
 column-gap:20px;
-padding-top:80px;
+
 text-align:center;
 justify-content: center;
-height:77vh;
 background-image:url(${backgroundUrl});
 color:white;
 li{
@@ -17,7 +18,14 @@ li{
   list-style-type: none;
 `
 export const ImgContainer = styled.div`
+margin-top:90px;
 width:100%;
+:hover {
+    border-radius:10px;
+    cursor:pointer;
+    box-shadow: inset 0 0 1em gray, 0 0 1em gray;
+  }
+  
 
 img{
     width:100%;
