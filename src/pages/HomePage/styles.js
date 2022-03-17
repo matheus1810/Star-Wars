@@ -4,24 +4,22 @@ export const HomePageContainer=styled.div.attrs((props) => props)`
 background-image: url('https://hddesktopwallpapers.in/wp-content/uploads/2015/06/pictures-star-wars-soldiers.jpg');
 background-size: 100%;
 background-repeat:no-repeat;
-height:560.3px;
-border-top:1px solid black;
+height:556.74px;
 display:flex;
 
 li{
-  cursor:pointer;
     color:black;
-    font-size:1.8rem;
+    font-size:2rem;
     list-style-type: none;
-    width:300px;
-    height:250px;
-    margin:40px 0 0 0;
+    width:250px;
+    height:100px;
+    margin:40px 20px 0 20px;
     text-align:center;
     :hover {
-        background-image: url('${(props) => props.color}');
-        background-repeat: no-repeat;
-        background-position: center ;
-        background-size:140px;
+      border-radius:20px;
+      background-color:rgba(149,165,166,0.3);
+        border:2px solid gray;
+        cursor:pointer;
   }
 
 }
