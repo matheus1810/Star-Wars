@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { backgroundUrl } from "../../../constants/back-ground-url"
 
 export const CharacterListPageContainer= styled.div`
+position:relative;
 padding-top:4.6px;
 text-align:center;
 display:grid;
@@ -25,4 +26,15 @@ img{
 export const CardCharacterContainer = styled.div`
 height:100%;
 
+`
+
+export const ImgContainer = styled.div`
+width:100%;
+img{
+    width:200px;
+    height:200px;
+    border-radius:10px;
+    cursor:pointer;
+    border:1px solid gray;
+}
 `

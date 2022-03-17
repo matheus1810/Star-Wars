@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom"
 import { CharacterListPage } from "../pages/CharactersPages/CharacterListPage/CharacterListPage"
-import { CharacterDetailPage } from "../pages/CharactersPages/CharacterDetailPage/CharacterDetailPage"
 import { HomePage } from "../pages/HomePage/HomePage"
 import { PlanetsPage } from "../pages/PlanetsPages/PlanetsPage/PanetsPage"
 import { PlanetsDetalsPage } from "../pages/PlanetsPages/PlanetsDetailsPage/PlanetsDetailsPage"
@@ -33,7 +32,6 @@ export const Routers = () => {
             <Route path="/starships/:id" element={<StarshipsDetailsPage />} />
 
             <Route path="/characters" element={<CharacterListPage />} />
-            <Route path="/character/:id" element={<CharacterDetailPage />} />
 
             <Route />
         </Routes>
