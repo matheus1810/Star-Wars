@@ -46,7 +46,7 @@ export const vehiclesUrls = {
     7: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5_oPYM_3AW8lr1fsee-14wHaEo%26pid%3DApi&f=1",
     8: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.cSTu_AwSRKW_RO48XIoCLAHaIi%26pid%3DApi&f=1",
     9: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7Ax5J0h4Da4TnrlITMGMRwHaF8%26pid%3DApi&f=1",
-    10: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIF.bcEqqMtU%252b807YTmF9woryA%26pid%3DApi&f=1",
+    10: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagLfyW10wLtXPjCgnHId7TpG2D4E0mkUzLDSLWUIVVt2KNi2_S2hUVnb-VsZoJe_igYE&usqp=CAU",
 }
 
 export const speciesUrls = {

@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { useRequestData } from "../../hooks/useRequestData";
 import { useState } from "react";
 import { Modal } from "../../modal/Modal";
+import { PageContainerStyled } from "../../globalStyles/PageContainerStyled";
+import { CardStyled } from "../../globalStyles/CardStyled";
 
 export const VehiclesPage = () => {
   const data = useRequestData(`${BASE_URL}/vehicles`, []);
@@ -12,7 +14,7 @@ export const VehiclesPage = () => {
   const [img, setImg] = useState(Number);
 
   return (
-    <VeiclesPageContainer>
+    <PageContainerStyled>
       {data.results &&
         data.results.map((item, index) => {
           const {
@@ -29,7 +31,8 @@ export const VehiclesPage = () => {
           } = data && data.results && data.results[img];
           return (
             <div key={index}>
-              <ImgContainer>
+
+              <CardStyled>
                 <img
                   onClick={() => {
                     setmodalIsVisible(true);
@@ -37,8 +40,10 @@ export const VehiclesPage = () => {
                   }}
                   src={vehiclesUrls[index + 1]}
                 />
-              </ImgContainer>
-              <li>{item.name}</li>
+           
+              <div>{item.name}</div>
+              </CardStyled>
+
               {modalIsVisible && (
                 <Modal setmodalIsVisible={setmodalIsVisible}>
                   <ImgContainer>
@@ -64,6 +69,6 @@ export const VehiclesPage = () => {
             </div>
           );
         })}
-    </VeiclesPageContainer>
+    </PageContainerStyled>
   );
 };
