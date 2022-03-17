@@ -1,7 +1,8 @@
 import styled from "styled-components"
-import {backgroundUrl} from "../../../constants/back-ground-url"
+import {backgroundUrl} from "../../constants/back-ground-url"
 
 export const SpeciesPageContainer = styled.div`
+position:relative;
 display:grid;
 grid-template-columns:repeat(5,15vw);
 column-gap:40px;
@@ -9,7 +10,7 @@ padding-top:5px;
 text-align:center;
 justify-content: center;
 justify-content: center;
-height:87.9vh;
+height:88.99vh;
 background-image:url(${backgroundUrl});
 color:white;
 `

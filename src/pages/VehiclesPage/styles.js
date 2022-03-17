@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { backgroundUrl } from "../../../constants/back-ground-url"
+import { backgroundUrl } from "../../constants/back-ground-url"
 
 
 export const VeiclesPageContainer = styled.div`
@@ -10,7 +10,7 @@ column-gap:50px;
 padding-top:10px;
 text-align:center;
 justify-content: center;
-height:87vh;
+height:87.99vh;
 background-image:url(${backgroundUrl});
 color:white;
 li{
