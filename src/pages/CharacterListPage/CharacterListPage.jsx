@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { BASE_URL } from "../../constants/urls";
 import { useRequestData } from "../../hooks/useRequestData";
-import { Card, CharacterListPageContainer, ImgContainer } from "./styles";
+import { ImgContainer } from "./styles";
+import { CardStyled } from "../../globalStyles/CardStyled";
+import { PageContainerStyled } from "../../globalStyles/PageContainerStyled";
 import { charactersUrls } from "../../assets/imgUrls";
 import { useState } from "react";
 import { Modal } from "../../modal/Modal";
@@ -14,7 +16,7 @@ export const CharacterListPage = () => {
 
   return (
     <div>
-      <CharacterListPageContainer>
+      <PageContainerStyled>
         {data?.results &&
           data.results.map((character, index) => {
             const {
@@ -29,7 +31,7 @@ export const CharacterListPage = () => {
 
             return (
               <div>
-                <Card
+                <CardStyled
                   onClick={() => {
                     setmodalIsVisible(true)
                     setImg(index)
@@ -38,8 +40,8 @@ export const CharacterListPage = () => {
                   <img src={charactersUrls[index + 1]}></img>
 
                   <div>{character.name}</div>
-                  
-                </Card>
+
+                </CardStyled>
 
                 {modalIsVisible && (
                   <Modal setmodalIsVisible={setmodalIsVisible}>
@@ -60,7 +62,7 @@ export const CharacterListPage = () => {
               </div>
             );
           })}
-      </CharacterListPageContainer>
+      </PageContainerStyled>
     </div>
   );
 };

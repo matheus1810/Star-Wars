@@ -1,9 +1,11 @@
-import { ImgContainer, PlanetsPageContainer } from "./styles"
+import { ImgContainer } from "./styles"
 import { planetsUrls } from "../../assets/imgUrls"
 import { BASE_URL } from "../../constants/urls"
 import { useRequestData } from "../../hooks/useRequestData"
 import { useState } from "react"
 import { Modal } from "../../modal/Modal"
+import { CardStyled } from "../../globalStyles/CardStyled"
+import { PageContainerStyled } from "../../globalStyles/PageContainerStyled"
 
 
 export const PlanetsPage = () => {
@@ -14,7 +16,7 @@ export const PlanetsPage = () => {
 
 
   return (
-    <PlanetsPageContainer>
+    <PageContainerStyled>
       {data && data.results && data.results.map((item, index) => {
 
         const {
@@ -31,18 +33,19 @@ export const PlanetsPage = () => {
 
         return (
           <div key={index}>
-            <ImgContainer>
+            <CardStyled>
+
               <img
                 onClick={() => {
                   setmodalIsVisible(true);
                   setImg(index)
                 }}
                 src={planetsUrls[index + 1]} />
-            </ImgContainer>
-            <li>
-              {item.name}
-            </li>
 
+              <div>
+                {item.name}
+              </div>
+            </CardStyled>
             {modalIsVisible && (
               <Modal setmodalIsVisible={setmodalIsVisible}>
                 <ImgContainer>
@@ -65,6 +68,6 @@ export const PlanetsPage = () => {
           </div>)
       })}
 
-    </PlanetsPageContainer>
+    </PageContainerStyled>
   )
 }
