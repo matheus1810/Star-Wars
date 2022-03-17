@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { backgroundUrl } from "../../../constants/back-ground-url"
+import { backgroundUrl } from "../../constants/back-ground-url"
 
 
 export const VeiclesPageContainer = styled.div`

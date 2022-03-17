@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { backgroundUrl } from "../../../constants/back-ground-url"
+import { backgroundUrl } from "../../constants/back-ground-url"
 
 
 export const FilmsPageContainer = styled.div`
@@ -24,5 +24,14 @@ img{
     border-radius:10px;
     border:1px solid gray;
     cursor:pointer;
+}
+
+
+`
+export const ImgModalContainer = styled.div`
+width:200px;
+height:200px;
+img{
+  width:100%;
 }
 `
