@@ -13,6 +13,16 @@ export const VehiclesPage = () => {
   const [modalIsVisible, setmodalIsVisible] = useState(false);
   const [img, setImg] = useState(Number);
 
+ 
+  const shortenString = (string)=>{
+    if(string.length>=27){
+     return  string.slice(0, -3)
+    }else{
+      return string 
+    }
+  }
+
+
   return (
     <PageContainerStyled>
       {Object.keys(data).length<=0  && (<LoaderPage/>)}
@@ -42,7 +52,7 @@ export const VehiclesPage = () => {
                   src={vehiclesUrls[index + 1]}
                 />
            
-              <div>{item.name}</div>
+              <div>{shortenString(item.name)}</div>
               </CardStyled>
 
               {modalIsVisible && (
