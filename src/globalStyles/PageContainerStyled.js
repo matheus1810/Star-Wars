@@ -4,12 +4,12 @@ import { backgroundUrl } from "../constants/back-ground-url"
 
 export const PageContainerStyled = styled.div`
 display:grid;
-grid-template-columns:repeat(5,230px);
-grid-template-rows:270px 270px;
-row-gap:10px;
+grid-template-columns:repeat(5,200px);
+grid-template-rows:250px 250px;
+row-gap:12px;
 justify-content: space-evenly;
 background-image:url(${backgroundUrl});
 color:white;
-height:556.73px;
+height:555.74px;
 font-family: 'Palette Mosaic', cursive;
 `

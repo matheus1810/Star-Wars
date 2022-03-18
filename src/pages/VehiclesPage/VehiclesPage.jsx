@@ -1,7 +1,6 @@
-import { ImgContainer, VeiclesPageContainer } from "./styles";
+import { ImgContainer,} from "./styles";
 import { vehiclesUrls } from "../../assets/imgUrls";
 import { BASE_URL } from "../../constants/urls";
-import { useNavigate } from "react-router-dom";
 import { useRequestData } from "../../hooks/useRequestData";
 import { useState } from "react";
 import { Modal } from "../../modal/Modal";
