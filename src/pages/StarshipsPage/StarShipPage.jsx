@@ -19,11 +19,10 @@ export const StarShipPage = () => {
 
   return (
     <PageContainerStyled>
-      {Object.keys(data).length<=0  && (<LoaderPage/>)}
+      {Object.keys(data).length <= 0 && (<LoaderPage />)}
       {data && data.results && data.results.map((item, index) => {
         const {
           name,
-          MGLT,
           cargo_capacity,
           pilots,
           consumables,
@@ -32,9 +31,9 @@ export const StarShipPage = () => {
           starship_class,
           hyperdrive_rating,
           length,
-          manufacturer,
           max_atmosphering_speed,
-          model, passengers
+          model,
+          passengers
         } = data && data.results && data.results[img]
         return (
 
@@ -56,22 +55,22 @@ export const StarShipPage = () => {
                 <ImgContainer>
                   <img src={starshipsUrls[img + 1]} />
                 </ImgContainer>
-                <ul>
-                  <li>Name: {name}</li>
-                  <li>MGLT: {MGLT}</li>
-                  <li>Cargo Capacity: {cargo_capacity}</li>
-                  <li>consumables: {consumables}</li>
-                  <li>Cost in Credits: {cost_in_credits}</li>
-                  <li>Crew: {crew}</li>
-                  <li>Hyperdrive Rating: {hyperdrive_rating}</li>
-                  <li>Length: {length}</li>
-                  <li>Manufacturer: {manufacturer}</li>
-                  <li>Max Atmosphering Speed: {max_atmosphering_speed}</li>
-                  <li>model: {model}</li>
-                  <li>Passengers: {passengers}</li>
-                  <li>Pilots: {pilots && pilots.length}</li>
-                  <li>Starships class: {starship_class}</li>
-                </ul>
+                <div className="starshipsStyled">
+                  <ul>
+                    <li>Name: {name}</li>
+                    <li>Cargo Capacity: {cargo_capacity}</li>
+                    <li>consumables: {consumables}</li>
+                    <li>Cost in Credits: {cost_in_credits}</li>
+                    <li>Crew: {crew}</li>
+                    <li>Hyperdrive Rating: {hyperdrive_rating}</li>
+                    <li>Length: {length}</li>
+                    <li>Max Atmosphering Speed: {max_atmosphering_speed}</li>
+                    <li>model: {model}</li>
+                    <li>Passengers: {passengers}</li>
+                    <li>Pilots: {pilots && pilots.length}</li>
+                    <li>Starships class: {starship_class}</li>
+                  </ul>
+                </div>
               </Modal>
             )}
           </div>)

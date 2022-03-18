@@ -36,7 +36,6 @@ export const PlanetsPage = () => {
         return (
           <div key={index}>
             <CardStyled>
-            
               <img
                 onClick={() => {
                   setmodalIsVisible(true);

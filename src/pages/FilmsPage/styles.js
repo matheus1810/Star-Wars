@@ -35,8 +35,6 @@ img{
 
 `
 export const ImgModalContainer = styled.div`
-width:200px;
-height:200px;
 img{
   width:100%;
 }

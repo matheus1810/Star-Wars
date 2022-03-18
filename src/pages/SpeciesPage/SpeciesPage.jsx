@@ -50,7 +50,8 @@ export const SpeciesPage = () => {
                 <ImgContainer>
                   <img src={speciesUrls[img + 1]} />
                 </ImgContainer>
-                <h3>{name}</h3>
+                <div>
+                <h2>{name}</h2>
                 <ul>
                   <li>Language: {language}</li>
                   <li>Average heigth: {average_height}</li>
@@ -63,6 +64,7 @@ export const SpeciesPage = () => {
                     Total Specie {name}: {people && people.length}
                   </li>
                 </ul>
+                </div>
               </Modal>
             )}
           </div>

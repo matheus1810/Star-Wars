@@ -25,32 +25,52 @@ p{
 `
 export const ModalContent = styled.div`
 display:flex;
+.filmsStyled{
+    margin-left:70px;
+    text-align:justify;
+    p{
+        text-align:justify;
+        width:300px;
+        font-size:1.1rem;
+        
+    }
+    h2{
+        margin:0px;
+    }
+    h4{
+
+      text-align:start;
+    }
+}
 
 h2{
-    margin-left:40px;
+    margin-left:70px;
 }
 
 
 img{
-    
-    border-radius:15px;
-    margin-top:-54.2px;
-    height:450px;
-    width:320px;
+    border-right:1px solid black;
+    border-radius:10px;
+    margin-top:-55px;
+    height:455px;
+    width:300px;
     order: 1;
 }
 ul{
+    margin-left:30px;
     list-style:none; 
     order:2;
     li{
-        padding:10px;
+        margin-bottom:8px;
+        padding:2px;
+        border-bottom:1px solid gray;
     }
 }
 `
 export const ModalFrame = styled.div`
-background-color:#808080;
+background-color:rgba(149,165,166,0.4);
 width:700px;
 height:450px;
-border-radius:30px 15px 15px 30px;
+border-radius:10px;
 
 `

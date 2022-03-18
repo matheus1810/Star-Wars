@@ -1,6 +1,6 @@
 import { filmsUrls } from "../../assets/imgUrls"
-import { FilmsPageContainer, ImgContainer,ImgModalContainer} from "./styles"
-import { useRequestData} from "../../hooks/useRequestData"
+import { FilmsPageContainer, ImgContainer, ImgModalContainer } from "./styles"
+import { useRequestData } from "../../hooks/useRequestData"
 import { BASE_URL } from "../../constants/urls"
 import { useState } from "react"
 import { Modal } from "../../modal/Modal"
@@ -18,9 +18,9 @@ export const FilmsPage = () => {
 
     return (
         <FilmsPageContainer>
-            {Object.keys(data).length<=0  && (<LoaderPage/>)}
+            {Object.keys(data).length <= 0 && (<LoaderPage />)}
 
-             {data && data.results && data.results.map((item, index) => {
+            {data && data.results && data.results.map((item, index) => {
 
 
                 const {
@@ -38,7 +38,7 @@ export const FilmsPage = () => {
                                     setImg(index)
                                 }}
                                 src={filmsUrls[index + 1]} />
-                      
+
 
                         </ImgContainer>
 
@@ -47,11 +47,11 @@ export const FilmsPage = () => {
                                 <ImgModalContainer>
                                     <img src={filmsUrls[img + 1]} />
                                 </ImgModalContainer>
-                                <ul>
-                                    <h3>title: {title}</h3>
-                                    <p>Director: {director}</p>
-                                    <li>openiing crawl: {opening_crawl}</li>
-                                </ul>
+                                <div className="filmsStyled">
+                                    <h2>{title}</h2>
+                                    <h4>Director: {director}</h4>
+                                    <p>{opening_crawl}</p>
+                                </div>
                             </Modal>
                         )}
 
@@ -59,7 +59,7 @@ export const FilmsPage = () => {
             }
             )
 
-            } 
+            }
         </FilmsPageContainer>
     )
 }
