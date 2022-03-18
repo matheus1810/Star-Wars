@@ -12,19 +12,45 @@ justify-content:center;
 align-items:center;
 `
 export const ModalHeader = styled.div`
-text-align:end;
-margin:10px 10px 0 0;
-div{
+margin:10px 10px 0 95%;
+p{
     :hover{
         cursor:pointer;
     }
 }
+p{
+    width:5px;
+   
+}
 `
 export const ModalContent = styled.div`
+display:flex;
 
+h2{
+    margin-left:40px;
+}
+
+
+img{
+    
+    border-radius:15px;
+    margin-top:-54.2px;
+    height:450px;
+    width:320px;
+    order: 1;
+}
+ul{
+    list-style:none; 
+    order:2;
+    li{
+        padding:10px;
+    }
+}
 `
 export const ModalFrame = styled.div`
 background-color:#808080;
-width:780px;
-height:460px;
+width:700px;
+height:450px;
+border-radius:30px 15px 15px 30px;
+
 `

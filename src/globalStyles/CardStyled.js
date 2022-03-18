@@ -17,7 +17,7 @@ div{
     border-radius:0px 0px 7px  7px ;
     position: relative;
     background-color:rgba(149,165,166,0.3);
-    margin-top:-58px;
+    margin-top:-57px;
     height:13.5%;
     align-self:center;
     padding-top:18px;

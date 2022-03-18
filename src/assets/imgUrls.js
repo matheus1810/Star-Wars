@@ -2,7 +2,7 @@
 export const charactersUrls =
 {
     1: "https://upload.wikimedia.org/wikipedia/en/9/9b/Luke_Skywalker.png",
-    2: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Ib97qo9FYgVFa3155RDeRQHaI_%26pid%3DApi&f=1",
+    2: "https://wallpapercave.com/wp/wp2182707.jpg",
     3: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tSE0tzvHaQ39Aam9z-XI6QHaJ3%26pid%3DApi&f=1",
     4: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.2TkYKwLjFDwSsPb83XkuWwHaJp%26pid%3DApi&f=1",
     5: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%3Fid%3DOIP.svIq3JKx9u_4m2RCrvTc-QAAAA%26pid%3DApi&f=1",

@@ -22,11 +22,11 @@ export const Modal = ({ children, setmodalIsVisible }) => {
             onClick={closeModal}>
             <ModalFrame>
                 <ModalHeader>
-                    <div
+                    <p
                         id="spam-buttom"
                         onClick={closeModal}
                         
-                    >X</div>
+                    >X</p>
                 </ModalHeader>
 
                 <ModalContent>

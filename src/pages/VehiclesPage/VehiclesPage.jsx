@@ -22,7 +22,6 @@ export const VehiclesPage = () => {
     }
   }
 
-
   return (
     <PageContainerStyled>
       {Object.keys(data).length<=0  && (<LoaderPage/>)}
