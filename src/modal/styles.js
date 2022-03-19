@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ModalBackDrop = styled.div`
+
 position:absolute;
 top:0;
 left:0;
@@ -18,31 +19,19 @@ p{
         cursor:pointer;
     }
 }
-p{
-    width:5px;
-   
-}
+
 `
 export const ModalContent = styled.div`
-display:flex;
-.filmsStyled{
-    margin-left:70px;
-    text-align:justify;
-    p{
-        text-align:justify;
-        width:300px;
-        font-size:1.1rem;
-        
-    }
-    h2{
-        margin:0px;
-    }
-    h4{
 
-      text-align:start;
-    }
+@media screen and (max-width: 700px) {
+    h2{
+    margin-left:0px;
 }
 
+}
+
+
+display:flex;
 h2{
     margin-left:70px;
 }
@@ -64,6 +53,25 @@ ul{
         margin-bottom:8px;
         padding:2px;
         border-bottom:1px solid gray;
+    }
+    
+
+}
+.filmsStyled{
+    margin-left:70px;
+    text-align:justify;
+    p{
+        text-align:justify;
+        width:300px;
+        font-size:1.1rem;
+        
+    }
+    h2{
+        margin:0px;
+    }
+    h4{
+
+      text-align:start;
     }
 }
 `
