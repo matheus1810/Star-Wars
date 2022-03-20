@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ModalBackDrop = styled.div`
-
 position:absolute;
 top:0;
 left:0;
@@ -80,5 +79,4 @@ background-color:rgba(149,165,166,0.4);
 width:700px;
 height:450px;
 border-radius:10px;
-
 `

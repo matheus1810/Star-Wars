@@ -5,7 +5,7 @@ import { CardStyled } from "../../globalStyles/CardStyled";
 import { PageContainerStyled } from "../../globalStyles/PageContainerStyled";
 import { charactersUrls } from "../../assets/imgUrls";
 import { useState } from "react";
-import { Modal } from "../../modal/Modal";
+import Modal2 from "../../modal2/Modal2"
 import LoaderPage from "../../components/LoaderPage/LoaderPage";
 
 
@@ -50,7 +50,7 @@ export const CharacterListPage = () => {
               </CardStyled>
 
               {modalIsVisible && (
-                <Modal setmodalIsVisible={setmodalIsVisible}>
+                <Modal2 setmodalIsVisible={setmodalIsVisible}>
                   <ImgContainer>
                     <img src={charactersUrls[img + 1]} />
                   </ImgContainer>
@@ -65,7 +65,7 @@ export const CharacterListPage = () => {
                       <li>Hair color: {hair_color}</li>
                     </ul>
                   </div>
-                </Modal>
+                </Modal2>
               )}
             </div>
           );
