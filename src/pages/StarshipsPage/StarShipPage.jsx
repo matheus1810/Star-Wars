@@ -4,7 +4,7 @@ import { BASE_URL } from "../../constants/urls"
 import { useNavigate } from "react-router-dom"
 import { useRequestData } from "../../hooks/useRequestData"
 import { useState } from "react"
-import { Modal } from "../../modal/Modal"
+import  ModalComponent from "../../modal/ModalComponent"
 import { PageContainerStyled } from "../../globalStyles/PageContainerStyled"
 import { CardStyled } from "../../globalStyles/CardStyled"
 import LoaderPage from "../../components/LoaderPage/LoaderPage"
@@ -51,7 +51,7 @@ export const StarShipPage = () => {
               </div>
             </CardStyled>
             {modalIsVisible && (
-              <Modal setmodalIsVisible={setmodalIsVisible}>
+              <ModalComponent  modalIsVisible={modalIsVisible} setmodalIsVisible={setmodalIsVisible}>
                 <ImgContainer>
                   <img src={starshipsUrls[img + 1]} />
                 </ImgContainer>
@@ -71,7 +71,7 @@ export const StarShipPage = () => {
                     <li>Starships class: {starship_class}</li>
                   </ul>
                 </div>
-              </Modal>
+              </ModalComponent>
             )}
           </div>)
       })}

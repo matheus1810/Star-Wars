@@ -2,7 +2,7 @@
 export const charactersUrls =
 {
     1: "https://upload.wikimedia.org/wikipedia/en/9/9b/Luke_Skywalker.png",
-    2: "https://wallpapercave.com/wp/wp2182707.jpg",
+    2: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Ib97qo9FYgVFa3155RDeRQHaI_%26pid%3DApi&f=1",
     3: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tSE0tzvHaQ39Aam9z-XI6QHaJ3%26pid%3DApi&f=1",
     4: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.2TkYKwLjFDwSsPb83XkuWwHaJp%26pid%3DApi&f=1",
     5: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%3Fid%3DOIP.svIq3JKx9u_4m2RCrvTc-QAAAA%26pid%3DApi&f=1",
@@ -13,14 +13,6 @@ export const charactersUrls =
     10: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.MW4yfR_jJONzvx3G6LLRUgAAAA%26pid%3DApi&f=1",
 }
 
-export const filmsUrls = {
-    1: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.RjRWRhJ6JrRgoTjXHP8LPQHaLA%26pid%3DApi&f=1",
-    2: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.9Tk3ZsPuhjFWpIXdG4ycxQHaLH%26pid%3DApi&f=1",
-    3: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.TsW5IQDpW-blW2WRxcS6LQHaLH%26pid%3DApi&f=1",
-    4: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.gYfelnE-PX_0kkRB8TIchgHaLH%26pid%3DApi&f=1",
-    5: "https://flxt.tmsimg.com/assets/p28914_p_v12_ah.jpg",
-    6: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.0O_mZD5Jp65svA0v3HnjHwHaLH%26pid%3DApi&f=1"
-}
 
 export const planetsUrls = {
     1: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.lIDUqdngby6LZMAjuyC_JQHaFj%26pid%3DApi&f=1",
@@ -46,18 +38,18 @@ export const vehiclesUrls = {
     7: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5_oPYM_3AW8lr1fsee-14wHaEo%26pid%3DApi&f=1",
     8: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.cSTu_AwSRKW_RO48XIoCLAHaIi%26pid%3DApi&f=1",
     9: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7Ax5J0h4Da4TnrlITMGMRwHaF8%26pid%3DApi&f=1",
-    10: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagLfyW10wLtXPjCgnHId7TpG2D4E0mkUzLDSLWUIVVt2KNi2_S2hUVnb-VsZoJe_igYE&usqp=CAU",
+    10: "https://images.alphacoders.com/764/thumb-1920-764252.jpg",
 }
 
 export const speciesUrls = {
-    1: "https://upload.wikimedia.org/wikipedia/en/9/9b/Luke_Skywalker.png",
+    1: "https://i.ytimg.com/vi/tzH2MnA8lYU/maxresdefault.jpg",
     2: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.euVhpkYNJ-Ngl36X-UganQHaHa%26pid%3DApi&f=1",
     3: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.PB4V_w696ogcEUxbtD6ImAHaEK%26pid%3DApi&f=1",
     4: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.8v-f5yoOJABq01Cck3-aOAHaJ4%26pid%3DApi&f=1",
     5: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.RzyWeVYsXi39AA30oZm4OQHaDt%26pid%3DApi&f=1",
     6: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.KiibvDkaxnYQmUIsyjhGwQHaDt%26pid%3DApi&f=1",
     7: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-KvuvVHFNT-ckpa3uziV4wHaDt%26pid%3DApi&f=1",
-    8: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJuGoxFgG-JFwFDiodJEWqzxsukSJxJEoLfg&usqp=CAU",
+    8: "https://www.looper.com/img/gallery/star-wars-the-mon-calamari-explained/l-intro-1605299609.jpg",
     9: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.eOASUZ5J4mqRizYIMoqftwHaDt%26pid%3DApi&f=1",
     10: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.bxThjNxg800KUwOmZtQwWwHaDt%26pid%3DApi&f=1",
 }

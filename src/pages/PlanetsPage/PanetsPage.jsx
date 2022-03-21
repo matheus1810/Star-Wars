@@ -3,7 +3,7 @@ import { planetsUrls } from "../../assets/imgUrls"
 import { BASE_URL } from "../../constants/urls"
 import { useRequestData } from "../../hooks/useRequestData"
 import { useState } from "react"
-import { Modal } from "../../modal/Modal"
+import ModalComponent from "../../modal/ModalComponent"
 import { CardStyled } from "../../globalStyles/CardStyled"
 import { PageContainerStyled } from "../../globalStyles/PageContainerStyled"
 import LoaderPage from "../../components/LoaderPage/LoaderPage"
@@ -48,7 +48,7 @@ export const PlanetsPage = () => {
               </div>
             </CardStyled>
             {modalIsVisible && (
-              <Modal setmodalIsVisible={setmodalIsVisible}>
+              <ModalComponent modalIsVisible={modalIsVisible} setmodalIsVisible={setmodalIsVisible}>
                 <ImgContainer>
                   <img src={planetsUrls[img + 1]} />
                 </ImgContainer>
@@ -63,7 +63,7 @@ export const PlanetsPage = () => {
                   <li>Residents: {residents && residents.length}</li>
                   <li>Terrain: {terrain}</li>
                 </ul>
-              </Modal>
+              </ModalComponent>
             )}
 
           </div>)
