@@ -19,18 +19,14 @@ Aplicação feita com ituito de criar um site inspirado nos filmes Star Wars ond
    * [Requisitos de Funcionalidade](#requisitos-de-funcionalidade)
    * [Concepção do Projeto](#concepcao-do-projeto)
    * [Link para Acessar](#link-para-acessar)
-   * [Rodando o Projeto](#rodando-o-projeto)
-   * [Sobre a Licença](#sobre-a-licença)
+
 <!--te-->
 
 
 ---
 ##  🧭Status do Projeto
 
-  ⏳ Fazendo
- - Estilização das paginas de detalhes dos planetas, veículos, planetas e naves
- - Responsividade
- - Tela de loading
+  ⏳ Pronto
 
 ---
 
@@ -42,32 +38,15 @@ além de utilizar styled-components e material UI para estilização e react-rou
 ## ☑️Requisitos de Funcionalidade
 
 - [x] Página principal onde o usuário pode abrir os detalhes de cada entidade (Characters, Starships, Vehicles, Species, Films).
-- [x] Ao escolher uma entidade sera direcionado para página contendo os detalhes desse item.
+- [x] Ao clicar em um item a pagina ira abrir um modal com os detalhes dele.
+- [x]tela de loading 
 
 ---
 
 
 ## 🔗Link para Acessar
 
-- **Link do Surge:** ~~COLOCAR AQUI O LINK DO SURGE~~
-
----
+-https://star-wars-wars.surge.sh/species
 
 
 
-## 🛰Rodando o Projeto
-
-~~EXPLICAR AQUI O PASSO A PASSO PARA CONSEGUIR RODAR E ACESSAR O PROJETO.~~
-
-Para Rodar o projeto, siga as seguintes etapas :
-
-- COLOCAR A ETAPA 1
-- COLOCAR A ETAPA 2
-- COLOCAR A ETAPA 3
-
-
----
-
-## 📝Sobre a Licença
-
-Este projeto esta sobe a licença [MIT](./LICENSE).
