@@ -5,7 +5,6 @@ import { PlanetsPage } from "../pages/PlanetsPage/PanetsPage"
 import { VehiclesPage } from "../pages/VehiclesPage/VehiclesPage"
 import { SpeciesPage } from "../pages/SpeciesPage/SpeciesPage"
 import { StarShipPage } from "../pages/StarshipsPage/StarShipPage"
-import { FilmsPage } from "../pages/FilmsPage/FilmsPage"
 
 export const Routers = () => {
     return (
@@ -14,8 +13,6 @@ export const Routers = () => {
             <Route path="/" element={<HomePage />} />
 
             <Route path="/planets" element={<PlanetsPage />} />
-
-            <Route path="/films" element={<FilmsPage />} />
 
             <Route path="/vehicles" element={<VehiclesPage />} />
 

@@ -3,7 +3,7 @@ import { vehiclesUrls } from "../../assets/imgUrls";
 import { BASE_URL } from "../../constants/urls";
 import { useRequestData } from "../../hooks/useRequestData";
 import { useState } from "react";
-import { Modal } from "../../modal/Modal";
+import ModalComponent from "../../modal/ModalComponent";
 import { PageContainerStyled } from "../../globalStyles/PageContainerStyled";
 import { CardStyled } from "../../globalStyles/CardStyled";
 import LoaderPage from "../../components/LoaderPage/LoaderPage";
@@ -54,7 +54,7 @@ export const VehiclesPage = () => {
               </CardStyled>
 
               {modalIsVisible && (
-                <Modal setmodalIsVisible={setmodalIsVisible}>
+                <ModalComponent modalIsVisible={modalIsVisible}  setmodalIsVisible={setmodalIsVisible}>
                   <ImgContainer>
                     <img src={vehiclesUrls[img + 1]} />
                   </ImgContainer>
@@ -72,7 +72,7 @@ export const VehiclesPage = () => {
                       <li>Pilots:{pilots && pilots.length}</li>
                     </ul>
                   </div>
-                </Modal>
+                </ModalComponent>
               )}
             </div>
           );

@@ -34,7 +34,6 @@ justify-content: space-evenly;
 background-image:url(${backgroundUrl});
 color:white;
 height:555.74px;
-font-family: 'Palette Mosaic', cursive;
 .vehiclesStyled{
     margin-top:-50px;
 }

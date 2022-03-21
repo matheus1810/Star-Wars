@@ -2,37 +2,38 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
+import {BoxStyled} from "./styled"
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '30vw',
+  width: '26vw',
   bgcolor: 'lightgray',
   border: '1px solid gray',
   p: 3,
 };
 
-export default function Modal2({children}) {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+export default function ModalComponent({children ,modalIsVisible,setmodalIsVisible}) {
+  const handleOpen = () => setmodalIsVisible(true);
+  const handleClose = () => setmodalIsVisible(false);
 
   return (
     <div>
       <Button onClick={handleOpen}>Open modal</Button>
       <Modal
-     
-      style={{ backdropFilter:'blur(13px)'}}
-        open={open}
+      style={{ backdropFilter:'blur(50px)'}}
+        open={modalIsVisible}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <BoxStyled>
+        <Box sx={style} className="Box">
         {children}
         </Box>
+        </BoxStyled>
       </Modal>
     </div>
   );

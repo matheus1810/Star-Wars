@@ -2,7 +2,7 @@ import { ImgContainer, SpeciesPageContainer } from "./styles";
 import { speciesUrls } from "../../assets/imgUrls";
 import { BASE_URL } from "../../constants/urls";
 import {useRequestData } from "../../hooks/useRequestData";
-import { Modal } from "../../modal/Modal";
+import ModalComponent from "../../modal/ModalComponent";
 import { useState } from "react";
 import { PageContainerStyled } from "../../globalStyles/PageContainerStyled";
 import { CardStyled } from "../../globalStyles/CardStyled";
@@ -46,13 +46,13 @@ export const SpeciesPage = () => {
             <div>{item.name}</div>
             </CardStyled>
             {modalIsVisible && (
-              <Modal setmodalIsVisible={setmodalIsVisible}>
+              <ModalComponent modalIsVisible={modalIsVisible}  setmodalIsVisible={setmodalIsVisible}>
                 <ImgContainer>
                   <img src={speciesUrls[img + 1]} />
                 </ImgContainer>
                 <div>
-                <h2>{name}</h2>
                 <ul>
+                <li>Species Name: {name}</li>
                   <li>Language: {language}</li>
                   <li>Average heigth: {average_height}</li>
                   <li>Average Lifespan: {average_lifespan}</li>
@@ -65,7 +65,7 @@ export const SpeciesPage = () => {
                   </li>
                 </ul>
                 </div>
-              </Modal>
+              </ModalComponent>
             )}
           </div>
         );
